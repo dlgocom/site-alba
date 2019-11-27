@@ -1,0 +1,233 @@
+footer{
+    width: 100%;
+
+    .mask-img {
+        display: block;
+        max-width: 100%;
+        min-height: 430px;
+    }
+      
+    .object-mask {
+        mask-image: url(../images/footer/mask-footer.svg);
+        background-color: $verde-alba;
+        mask-repeat: no-repeat;
+        mask-size: 100%;
+        mask-position: center;
+    }
+
+    .session-footer{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 3.3125rem;
+        margin-bottom: 2.5125rem;
+
+        .logo-footer{
+            display: flex;
+            align-items: center;
+            margin-top: 6.6rem;
+            margin-left: .7rem;
+        }
+
+        .site-map{
+            
+            h2{
+                font-size: 0.875rem;
+                color: $amarelo-alba;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 900;
+            }
+
+            ul{
+                display: contents;
+                line-height: 220%;
+
+                .linha{
+                    position: relative;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 94px;
+                        background-color: #ffffff;
+                        height: 1px;
+                        bottom: 0;
+                    }
+                }
+
+                li{
+                    list-style-type: none;
+                    a{
+                        font-size: 0.75rem;
+                        color: #ffffff;
+                        font-weight: 500;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .unidades{
+            line-height: 150%;
+
+            h2{
+                font-size: 0.875rem;
+                color: $amarelo-alba;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 900;
+            }
+
+            p{
+                font-size: 0.875rem;
+                color: #ffffff;
+                margin: 1rem 0;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .unidades-mobile{
+            display: none;
+        }
+
+        .nossas-redes{
+            
+
+            h2{
+                font-size: 0.875rem;
+                color: $amarelo-alba;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 900;
+            }
+
+            .icones{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+
+                    .fab{
+                        font-size: 19.58px;
+                        color: #ffffff;
+                        margin-right: 2.5rem;
+                        margin-top: .3rem;
+                    }
+                }
+            }
+        }
+
+        .contato, .orcamento, .faq{
+            
+            h2{
+                font-size: 0.875rem;
+                color: $amarelo-alba;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 900;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 0.75rem;
+                color: #ffffff;
+                line-height: 100%;
+                margin-bottom: 2rem;
+
+                a{
+                    text-decoration: underline;
+                    font-size: 0.75rem;
+                    color: #ffffff;
+                }
+            }
+        }
+        .logo-weg{
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    footer{
+        width: 100%;
+        height: 100%;
+    
+        .mask-img {
+            height: 811px;
+        }
+          
+        .object-mask {
+            mask-image: url(../images/footer/mask-footer-mobile.svg)!important;
+        }
+    
+        .session-footer{
+            margin-top: 3.3125rem;
+            margin-bottom: 2.5125rem;
+            margin-left: 2.375rem;
+    
+            .logo-footer{
+                margin-top: 1.375rem;
+                margin-left: .7rem;
+                margin-bottom: 4rem;
+            }
+    
+            .site-map{
+               display: none;
+            }
+
+            .unidades{
+                display: none;
+            }
+    
+            .unidades-mobile{
+                display: block;
+                line-height: 150%;
+
+                h2{
+                    font-size: 0.875rem;
+                    color: $amarelo-alba;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-weight: 900;
+                }
+
+                p{
+                    font-size: 1rem;
+                    color: #ffffff;
+                    margin: 1rem 0;                    
+                }
+               
+            }
+    
+            .nossas-redes{
+                position: absolute;
+                top: 32rem;
+            }
+
+            .contato{
+                margin-top: 2rem;
+            }
+
+            .faq{
+                margin-top: 2.5rem;
+            }
+
+            .orcamento{
+                display: none;
+            }
+
+            .logo-weg{
+                display: none;
+            }
+        }
+    }    
+    
+}
